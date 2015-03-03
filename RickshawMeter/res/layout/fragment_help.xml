@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        android:text="Email: MH12@mahatranscom.in \n \n SMS Short Code for Public Service Vehicle Feedbacks/Complaints: 59994 *space* rtopune \n \n "
+        android:textSize="16dp" />
+
+    
+    <TextView
+        android:id="@+id/txtLabe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="EMERGENCY NUMBERS: \n \n Ruby Hall Clinic:	1099\n \nJehangir:	1066 \n \n Cardiac Ambulance:	26136315  "
+        android:textSize="16dp" />
+    
+    
+
+</RelativeLayout>

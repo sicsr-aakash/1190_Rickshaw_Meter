@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Rickshaw:"
+        android:textSize="28sp"
+        android:id="@+id/tv1"
+        android:layout_marginLeft="15dp"
+        android:textColor="#fefe00"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate Fare"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/calc"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="128dp"
+        android:layout_below="@+id/tv1"
+        android:layout_alignLeft="@+id/tv1"
+        android:layout_alignStart="@+id/tv1"/>
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Check Monthly\n Expenditure"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/mquizbtn"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/calc"
+        android:layout_alignLeft="@+id/calc"
+        android:layout_alignStart="@+id/calc" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Rickshaw Fun\n Facts"
+        android:background="@drawable/roundbutton"
+        android:id="@+id/ffbtn"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/mquizbtn"
+        android:layout_alignLeft="@+id/mquizbtn"
+        android:layout_alignStart="@+id/mquizbtn" />
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Problems\n Feedback Form"
+        android:id="@+id/button4"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/roundbutton"
+        android:layout_below="@+id/ffbtn"
+        android:layout_alignLeft="@+id/ffbtn"
+        android:layout_alignStart="@+id/ffbtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bhaiyya sunoo!!"
+        android:id="@+id/textView"
+
+        android:layout_alignTop="@+id/tv1"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_marginLeft="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#VimanNagar \n#Model Colony"
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="#MG \nRoad"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+
+</RelativeLayout>

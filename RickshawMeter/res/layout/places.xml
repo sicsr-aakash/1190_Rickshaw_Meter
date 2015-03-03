@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/places"
+        	    android:orientation="vertical"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content">
+        	    
+        	    <TextView android:id="@+id/pques"
+           	 	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:text="Large Text"
+            	android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        	    <RadioGroup android:id="@+id/rGroup"
+        	        android:layout_width="match_parent"
+        	        android:layout_height="wrap_content">
+        	       
+
+        	         <RadioButton
+        	                 android:id="@+id/radioButton1"
+        	                 android:layout_width="wrap_content"
+        	                 android:layout_height="wrap_content"
+        	                 android:text="Hadapsar" />
+
+        	         <RadioButton
+        	             android:id="@+id/radioButton2"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="MG Road" />
+
+        	         <RadioButton
+        	             android:id="@+id/radioButton3"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="Koregaon Park" />
+    
+        	         <RadioButton
+        	             android:id="@+id/radioButton4"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="Senapati Bapat Road" />
+
+        	         <RadioButton
+        	             android:id="@+id/radioButton5"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="Viman Nagar" />
+
+        	         <RadioButton
+        	             android:id="@+id/radioButton6"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="Hinjewadi" />
+
+        	         <RadioButton
+        	             android:id="@+id/rGroups"
+        	             android:layout_width="wrap_content"
+        	             android:layout_height="wrap_content"
+        	             android:text="Wanowrie"
+        	              />
+
+        	         
+				
+
+        	    </RadioGroup>
+        	    </LinearLayout>
+        	    
+    <LinearLayout android:orientation="horizontal"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_gravity="bottom"
+        	    android:id="@+id/opts">
+        	    	<Button android:id="@+id/back"
+        	    	    android:layout_width="match_parent"
+        	        	android:layout_height="wrap_content"
+        	        	android:layout_weight="1"
+        	        	android:text="Back" />
+
+        	    	<Button android:id="@+id/next"
+        	    	    android:layout_width="match_parent"
+        	        	android:layout_height="wrap_content"
+        	        	android:layout_weight="1"
+        	        	android:text="Next" />
+        </LinearLayout>
+
+</LinearLayout>

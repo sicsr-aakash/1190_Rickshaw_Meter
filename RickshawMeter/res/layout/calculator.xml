@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yellow" >
+    
+
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blackborder"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        >
+        
+        <TextView android:id="@+id/questn"
+           	 	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:padding="5dp"
+            	android:text="Enter the number of kilometers you have travelled?"
+            	android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            
+        <EditText android:id="@+id/km"
+           	 	android:layout_width="wrap_content"
+           	 	android:ems="2"
+            	android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            />
+        
+        <TextView android:text="kms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+        
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <EditText android:id="@+id/time"
+           	 	android:layout_width="wrap_content"
+           	 	android:ems="2"
+            	android:layout_height="wrap_content"
+            android:inputType="number"
+            />
+        
+        <TextView android:text="mins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_gravity="bottom"
+        	    android:id="@+id/opts">
+        	    	<Button android:id="@+id/back"
+        	    	    android:layout_width="match_parent"
+        	        	android:layout_height="wrap_content"
+        	        	android:layout_weight="1"
+        	        	android:text="Back" />
+
+        	    	<Button android:id="@+id/cal"
+        	    	    android:layout_width="match_parent"
+        	        	android:layout_height="wrap_content"
+        	        	android:layout_weight="1"
+        	        	android:text="Calculate"/>
+        </LinearLayout>
+        <TextView android:id="@+id/fare"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Your total fare is:\n \n" />
+    </LinearLayout>
+    
+</LinearLayout>
