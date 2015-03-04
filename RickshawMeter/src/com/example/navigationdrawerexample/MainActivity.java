@@ -147,10 +147,10 @@ public class MainActivity extends Activity {
         
         switch (position) {
         case 0:
-            fragment = new CreateFragment();
+            fragment = new HomeFragment();
             break;
         case 1:
-            fragment = new ReadFragment();
+            fragment = new FaresFragment();
             break;
         case 2:
             fragment = new Rto();

@@ -18,7 +18,8 @@ import android.widget.Toast;
 public class YesNoQues extends Fragment {
 	
 	int pos;
-	final GlobalClass g = (GlobalClass) getActivity().getApplicationContext();
+	//final GlobalClass g = (GlobalClass) getActivity().getApplicationContext();
+	GlobalClass g = new GlobalClass();
 	YesNoQues(int pos)
 	{
 		this.pos=pos;
@@ -84,15 +85,14 @@ public class YesNoQues extends Fragment {
 					}	
 					Toast.makeText(getActivity(), String.valueOf(g.getBaseline()), Toast.LENGTH_LONG).show();
 					
-					YesNoQues yFragment=new YesNoQues(pos+1);
+					NumberPickQues yFragment=new NumberPickQues(pos+1);
 					getFragmentManager().beginTransaction().replace(R.id.content_frame2, yFragment).commit();
 					}
 					else
 					{
 						Toast.makeText(getActivity(), "Select one", Toast.LENGTH_LONG).show();
 					}
-					NumberPickQues yFragment=new NumberPickQues(pos+1);
-					getFragmentManager().beginTransaction().replace(R.id.content_frame2, yFragment).commit();
+					
 				}
 				else if(pos==5)
 				{
@@ -109,6 +109,7 @@ public class YesNoQues extends Fragment {
 					if(yn.equals("Yes"))
 					{
 						
+						
 					}
 					else
 					{
@@ -116,8 +117,8 @@ public class YesNoQues extends Fragment {
 					}	
 					Toast.makeText(getActivity(), String.valueOf(g.getBaseline()), Toast.LENGTH_LONG).show();
 					
-					YesNoQues yFragment=new YesNoQues(pos+1);
-					getFragmentManager().beginTransaction().replace(R.id.content_frame2, yFragment).commit();
+					FinalExpense f=new FinalExpense();
+					getFragmentManager().beginTransaction().replace(R.id.content_frame2, f).commit();
 					}
 					else
 					{
@@ -129,8 +130,8 @@ public class YesNoQues extends Fragment {
 				{
 					FinalExpense f=new FinalExpense();
 					getFragmentManager().beginTransaction().replace(R.id.content_frame2, f).commit();
-					
 				}
+				
 			}
 			
 		};

@@ -18,7 +18,8 @@ import android.widget.Toast;
 public class Loner extends Fragment{
 	
 	int pos;
-	final GlobalClass g = (GlobalClass) getActivity().getApplicationContext();
+	//final GlobalClass g = (GlobalClass) getActivity().getBaseContext();
+	GlobalClass g = new GlobalClass();
 	Loner(int pos)
 	{
 		this.pos=pos;

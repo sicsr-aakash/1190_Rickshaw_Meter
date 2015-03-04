@@ -17,7 +17,8 @@ import com.example.navigationdrawerexample.R;
 public class NumberPickQues extends Fragment {
 	
 	int pos;
-	final GlobalClass g = (GlobalClass) getActivity().getApplicationContext();
+	//final GlobalClass g = (GlobalClass) getActivity().getApplicationContext();
+	GlobalClass g = new GlobalClass();
 	NumberPickQues(int pos)
 	{
 		this.pos=pos;
@@ -65,8 +66,8 @@ public class NumberPickQues extends Fragment {
 				
 				Toast.makeText(getActivity(), String.valueOf(np.getValue()), Toast.LENGTH_LONG).show();
 				
-				//Places1 yFragment=new Places1(pos+1);
-				//getFragmentManager().beginTransaction().replace(R.id.content_frame2, yFragment).commit();
+				Places1 yFragment=new Places1(pos+1,getActivity());
+				getFragmentManager().beginTransaction().replace(R.id.content_frame2, yFragment).commit();
 				
 			}
 			

@@ -12,16 +12,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class CreateFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
 	
-	public CreateFragment() {
+	public HomeFragment() {
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-		final View rootView = inflater.inflate(R.layout.fragment_create, container, false);
+		final View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
 		Button q=(Button) rootView.findViewById(R.id.mquizbtn);
 		OnClickListener quiz_listn=new OnClickListener(){

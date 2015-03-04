@@ -1,6 +1,6 @@
 package com.example.quiz;
 
-import com.example.navigationdrawerexample.CreateFragment;
+import com.example.navigationdrawerexample.HomeFragment;
 import com.example.navigationdrawerexample.GlobalClass;
 import com.example.navigationdrawerexample.R;
 
@@ -29,7 +29,7 @@ public class FinalExpense extends Fragment {
 			@Override
 			public void onClick(View v) 
 			{
-				CreateFragment yFragment=new CreateFragment();
+				HomeFragment yFragment=new HomeFragment();
 				getActivity().setTitle("Home");
 				getFragmentManager().beginTransaction().replace(R.id.content_frame, yFragment).commit();
 			}

@@ -32,7 +32,7 @@ public class Calculator extends Fragment {
 				if (getActivity().findViewById(R.id.content_frame) != null) {
 		    		
 					Toast.makeText(getActivity(), "Hi",Toast.LENGTH_LONG).show();
-		    		CreateFragment firstFragment = new CreateFragment();
+		    		HomeFragment firstFragment = new HomeFragment();
 		    		//getSupportFragmentManager().beginTransaction().replace(R.id.decider_container,firstFragment).commit();
 		    		getFragmentManager().beginTransaction().replace(R.id.content_frame, firstFragment).commit();
 		    		

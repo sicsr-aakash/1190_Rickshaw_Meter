@@ -23,7 +23,8 @@ public class Places1 extends Fragment {
 	Places1(int pos,Context c)
 	{
 		this.pos=pos;
-		g = (GlobalClass) getActivity().getApplicationContext();
+		//g = (GlobalClass) getActivity().getApplicationContext();
+		g = new GlobalClass();
 	}
 	
 	@Override
